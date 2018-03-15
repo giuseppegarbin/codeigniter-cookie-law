@@ -52,3 +52,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'homepage';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+$route["cookies/accept/(:any)"] = "cookies/index/accept/$1";
+$route["cookies/decline/(:any)"] = "cookies/index/decline/$1";
